@@ -86,16 +86,9 @@
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
                             <StackPanel Background="{StaticResource DarkBackground}" Orientation="Vertical">
                                 <StackPanel Margin="10">
-                                    <TextBlock Foreground="White" TextWrapping="Wrap" FontSize="20" Margin="0,0,0,10">
-                                        Detect NDEF
-                                    </TextBlock>
-                                    <TextBlock Foreground="White" TextWrapping="Wrap">
-                                        A special space-efficient format is called the NFC Data Exchange Format (NDEF) is commonly used to 
-                                        store data on NFC tags in a manner that allows NFC readers to make sense of the tag contents. If a tag has been formatted 
-                                        to store NDEF data in a standards-compliant fashion, this operation can be 
-                                        to retrieve that information, as well as some information about the tag itself.
-                                    </TextBlock>
-                                </StackPanel>
+									<TextBlock Foreground="White" TextWrapping="Wrap" FontSize="20" Margin="0,0,0,10" Text="Detect NDEF"/>
+									<TextBlock Foreground="White" TextWrapping="Wrap" Text="A special space-efficient format is called the NFC Data Exchange Format (NDEF) is commonly used to store data on NFC tags in a manner that allows NFC readers to make sense of the tag contents. If a tag has been formatted to store NDEF data in a standards-compliant fashion, this operation can be to retrieve that information, as well as some information about the tag itself."/>
+								</StackPanel>
                                 <Label Margin="10,10,0,0" Padding="0,0,0,10" Foreground="White" Content="Content"/>
                                 <TextBox Name="ndefData" AcceptsReturn="True" Style="{StaticResource TextBox}"></TextBox>
                                 <Button Name="readNdefButton" Margin="10" HorizontalAlignment="Right" Style="{StaticResource RoundButton}" Click="ReadNdefButton_Click">Read</Button>
